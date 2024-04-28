@@ -7,8 +7,8 @@
     <ProjectGuid>{648ACBB1-71B2-4845-B785-D5F23CB659C2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FanControl.SerialComSensor</RootNamespace>
-    <AssemblyName>FanControl.SerialComSensor</AssemblyName>
+    <RootNamespace>FanControl.SerialTemperaturePlugin</RootNamespace>
+    <AssemblyName>FanControl.SerialTemperaturePlugin</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -32,7 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FanControl.Plugins">
-      <HintPath>..\FanControl\FanControl.Plugins.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\FanControl\FanControl.Plugins.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -44,11 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="COMReader.cs" />
-    <Compile Include="FanControlPlugin.cs" />
+    <Compile Include="TemperatureReader.cs" />
+    <Compile Include="SerialTemperaturePlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SerialCOMSensor.cs" />
-    <Compile Include="States.cs" />
+    <Compile Include="SerialTemperatureSensor.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
